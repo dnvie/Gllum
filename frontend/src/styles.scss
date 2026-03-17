@@ -1,7 +1,13 @@
 :root {
   --width: 900px;
-  font-family: 'InterVariable', sans-serif;
-  font-feature-settings: 'liga' 1, 'calt' 1, 'dlig' 1, 'ss03' 1, 'cv01' 1, 'cv05' 1, 'cv06' 1;
+  font-family: "InterVariable", sans-serif;
+  font-feature-settings:
+    "liga" 1,
+    "calt" 1,
+    "dlig" 1,
+    "cv01" 1,
+    "cv05" 1,
+    "cv06" 1;
   letter-spacing: -0.025em;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -37,7 +43,7 @@
   --queryInputBorderBoxShadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.085);
   --inputButtonBackground: #ffffff;
   --inputButtonBorder: rgb(223, 223, 223);
-  --inputButtonColor: black;
+  --inputButtonColor: #3e3e3e;
   --inputButtonHover: #f4f4f4;
   --interruptButtonOuter: #2a2a2a;
   --interruptButtonOuterHover: #1c1c1c;
@@ -81,13 +87,11 @@
   --codeText: hsl(230, 8%, 204%);
   --codeTokenPunctuation: hsl(230, 8%, 24%);
 
-  --logoText: #202020
+  --logoText: #202020;
 }
 
 [data-theme="dark"] {
-
-  font-family: 'Inter Display', sans-serif;
-  letter-spacing: -0.005em;
+  font-family: "Inter Display", sans-serif;
   //-webkit-font-smoothing: initial;
   text-rendering: optimizeLegibility;
   //-moz-osx-font-smoothing: initial;
@@ -103,11 +107,7 @@
   --interrupted: rgba(255, 255, 255, 0.25);
   --scrollBarThumb: #2c2c2c;
   --scrollBarThumbHover: #333333;
-  --gradient: linear-gradient(
-    180deg,
-    #19191900 0%,
-    #191919 100%
-  );
+  --gradient: linear-gradient(180deg, #19191900 0%, #191919 100%);
   --queryOuterContainerBackgorund: rgb(44, 44, 44);
   --queryOuterContainerBorder: rgb(70, 70, 70);
   --attachmentFrameBackground: rgb(60, 60, 60);
@@ -120,7 +120,7 @@
   --queryInputBorderBorder: rgb(68, 68, 68);
   --queryInputBorderBoxShadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   --inputButtonBackground: #383838;
-  --inputButtonBorder: rgb(99, 99, 99);
+  --inputButtonBorder: rgb(78, 78, 78);
   --inputButtonColor: rgb(195, 195, 195);
   --inputButtonHover: #484848;
   --interruptButtonOuter: #ebebeb;
@@ -133,7 +133,7 @@
   --scrollDownButtonHover: #4a4a4a;
 
   --modelNameHome: #438fdf;
-  --homeText: #ebebeb;;
+  --homeText: #ebebeb;
 
   --currentModelBackground: #222222;
   --currentModelBorder: #444444;
@@ -169,13 +169,21 @@
 }
 
 @font-face {
-  font-family: 'InterVariable';
-  src: url("/frontend/src/assets/InterVariable.ttf");
+  font-family: "InterVariable";
+  src: url("/frontend/src/assets/Inter-VariableFont_opsz,wght.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Diosevka Extended";
+  src: url("/frontend/src/assets/DiosevkaExtended-Regular.ttf");
   font-style: normal;
 }
 
 @supports (font-variation-settings: normal) {
-  :root { font-family: InterVariable, sans-serif; }
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
 }
 
 * {
@@ -195,7 +203,7 @@ p {
 }
 
 code {
-  font-family: "Akkurat-Mono";
+  font-family: "Diosevka Extended";
   font-size: 14px;
   letter-spacing: initial !important;
   line-height: 10px !important;
@@ -284,7 +292,7 @@ code {
   border-radius: 16px;
   display: flex;
   gap: 10px;
-  color: var(--attachmentInfoColor)
+  color: var(--attachmentInfoColor);
 }
 
 .attachmentInfo {
@@ -322,7 +330,11 @@ code {
   justify-content: center;
   align-items: center;
   .closeSymbol {
-    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20 !important;
+    font-variation-settings:
+      "FILL" 0,
+      "wght" 400,
+      "GRAD" 0,
+      "opsz" 20 !important;
     font-size: 15px !important;
   }
 }
@@ -367,10 +379,10 @@ code {
   align-items: center;
   .boldSymbol {
     font-variation-settings:
-      'FILL' 0,
-      'wght' 600,
-      'GRAD' 0,
-      'opsz' 48
+      "FILL" 0,
+      "wght" 600,
+      "GRAD" 0,
+      "opsz" 48;
   }
 }
 
@@ -401,7 +413,7 @@ code {
   height: fit-content;
   padding: 5px 10px;
   border-radius: 12px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   border: 0.5px solid var(--inputButtonBorder);
   border-radius: 25px;
@@ -485,7 +497,8 @@ code {
 }
 
 .sendIcon {
-  font-variation-settings: "FILL" 1,
+  font-variation-settings:
+    "FILL" 1,
     "wght" 400,
     "GRAD" 0,
     "opsz" 20;
@@ -520,7 +533,14 @@ textarea {
   resize: none;
   border-radius: 10px;
   font-family: InterVariable, sans-serif;
-  font-feature-settings: 'liga' 1, 'calt' 1, 'dlig' 1, 'ss03' 1, 'cv01' 1, 'cv05' 1, 'cv06' 1;
+  font-feature-settings:
+    "liga" 1,
+    "calt" 1,
+    "dlig" 1,
+    "ss03" 1,
+    "cv01" 1,
+    "cv05" 1,
+    "cv06" 1;
   letter-spacing: -0.025em;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;

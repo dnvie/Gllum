@@ -39,7 +39,8 @@ code[class*="language-"],
 pre[class*="language-"] {
   background: var(--codeBackground);
   color: var(--codeColor);
-  font-family: "Akkurat-Mono", "Fira Mono", Menlo, Consolas, "DejaVu Sans Mono",
+  font-family:
+    "Diosevka Extended", "Fira Mono", Menlo, Consolas, "DejaVu Sans Mono",
     monospace;
   direction: ltr;
   text-align: left;

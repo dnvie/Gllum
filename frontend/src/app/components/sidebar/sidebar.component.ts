@@ -36,12 +36,16 @@ export class SidebarComponent implements OnInit, AfterViewInit {
   }
 
   switchTheme() {
-    if (document.documentElement.getAttribute('data-theme') == 'dark') {
-      document.documentElement.setAttribute('data-theme', 'light');
-      document.getElementById('logoSource')?.setAttribute('src', 'assets/logoGreyLightMode.svg');
+    if (document.documentElement.getAttribute("data-theme") == "dark") {
+      document.documentElement.setAttribute("data-theme", "light");
+      document
+        .getElementById("logoSource")
+        ?.setAttribute("src", "assets/gllum.svg");
     } else {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      document.getElementById('logoSource')?.setAttribute('src', 'assets/logoGreyDarkMode.svg');
+      document.documentElement.setAttribute("data-theme", "dark");
+      document
+        .getElementById("logoSource")
+        ?.setAttribute("src", "assets/gllumDark.svg");
     }
   }
 
@@ -63,7 +67,8 @@ export class SidebarComponent implements OnInit, AfterViewInit {
     this.sidebarService.collapseSidebar$.subscribe(() => {
       setTimeout(
         () => (
-          document.getElementById("frame")!.classList.toggle("collapsed"), 10
+          document.getElementById("frame")!.classList.toggle("collapsed"),
+          10
         ),
       );
     });
