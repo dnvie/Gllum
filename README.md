@@ -1,21 +1,27 @@
-# Gllum
+![image](https://i.imgur.com/j7V7Tn5.jpeg)
 
-Interact with local LLM models running in Ollama with an easy to use and familiar UI, with the possiblity of switching models during a conversation.
+# <p align="center">Gllum</p>
 
-Home:
+Interact with locally running large language models (LLM's). Gllum provides an easy-to-use and familiar UI, with message persistence, and vector embeddings for retrieval-augmented generated (RAG) functionality.
 
-![image](https://github.com/user-attachments/assets/6ab1a08e-27b5-4012-91e3-955bf7901296)
+Within each chat, it is possible to change models mid-conversation. 
 
-Switching models during a conversation (+markdown and math-mode support):
+You can use a multi-modal model like llama-vision to upload an image of a math problem, then switch to mathstral to provide a solution, and finally switch to codestral to give you a code for the solution, all within the same chat.
 
-![image](https://github.com/user-attachments/assets/a736590f-958f-4fd9-8ee2-61e3f926fbd5)
+### Home:
 
-Describing images with multi-modal LLMs:
+![image](https://i.imgur.com/TzcyBft.jpeg)
 
-![image](https://github.com/user-attachments/assets/88b22eb0-4c8b-4642-97c0-95ec70c76869)
+### Switching models during a conversation (+markdown and math-mode support):
 
-Model switcher + chat editing:
-![image](https://github.com/user-attachments/assets/4a343d12-5d1e-49a5-99c6-89fed4c18899)
+![image](https://i.imgur.com/p1tVQP1.jpeg)
+
+### Describing images with multi-modal LLMs:
+
+![image](https://i.imgur.com/zCY7Wci.jpeg)
+
+### Model switcher + chat editing:
+![image](https://i.imgur.com/yIS3eke.jpeg)
 
 
 
